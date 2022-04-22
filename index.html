@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='index.css') }}>
+</head>
+<body>
+    <div class = "valorreal">
+        <h1 class= "titulo">{{variavel}} </h1>
+        <hr>
+        <div class="caixareal">
+            <form class = caixa action="{{ url_for('index') }}" method = "post">
+                <div class =caixarealx>
+                    <label for="fname">BRL:</label>
+                    <input type="text" name = "name" placeholder="R$">
+                    <button>Converter</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+  <div class = resultado>
+    <p>{{resulto}}</p>
+    <p>{{result}}</p>
+  </div>
+</body>
+</html>
